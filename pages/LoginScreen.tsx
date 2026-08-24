@@ -1,13 +1,5 @@
-import React, {useState} from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  Button,
-  Alert,
-  StyleSheet,
-} from 'react-native';
-
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, Alert, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -38,7 +30,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const LoginScreen = ({navigation}: any) => {
+const LoginScreen = ({ navigation }: any) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -75,10 +67,7 @@ const LoginScreen = ({navigation}: any) => {
 
   return (
     <View style={styles.container}>
-
-      <Text style={styles.loginTitle}>
-        Login
-      </Text>
+      <Text style={styles.loginTitle}>Login</Text>
 
       <TextInput
         placeholder="Enter Email"
@@ -88,9 +77,7 @@ const LoginScreen = ({navigation}: any) => {
         style={styles.emailInput}
       />
 
-      <Text style={styles.errorText}>
-        {emailError}
-      </Text>
+      <Text style={styles.errorText}>{emailError}</Text>
 
       <TextInput
         placeholder="Enter Password"
@@ -100,21 +87,16 @@ const LoginScreen = ({navigation}: any) => {
         style={styles.passwordInput}
       />
 
-      <Text style={styles.errorText}>
-        {passwordError}
-      </Text>
+      <Text style={styles.errorText}>{passwordError}</Text>
 
-      <Button
-        title="Login"
-        onPress={validateLogin}
-      />
+      <Button title="Login" onPress={validateLogin} />
 
       <Text
         style={styles.registerText}
-        onPress={() => navigation.navigate('RegisterScreen')}>
+        onPress={() => navigation.navigate('RegisterScreen')}
+      >
         Don't have an account? Register
       </Text>
-
     </View>
   );
 };

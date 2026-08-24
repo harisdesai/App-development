@@ -1,12 +1,5 @@
-import React, {useState} from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  Button,
-  Alert,
-  StyleSheet,
-} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, Alert, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -37,7 +30,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const RegisterScreen = ({navigation}: any) => {
+const RegisterScreen = ({ navigation }: any) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -90,10 +83,7 @@ const RegisterScreen = ({navigation}: any) => {
 
   return (
     <View style={styles.container}>
-
-      <Text style={styles.title}>
-        Register
-      </Text>
+      <Text style={styles.title}>Register</Text>
 
       <TextInput
         placeholder="Enter Name"
@@ -126,21 +116,16 @@ const RegisterScreen = ({navigation}: any) => {
         style={styles.input}
       />
 
-      <Text style={styles.errorText}>
-        {error}
-      </Text>
+      <Text style={styles.errorText}>{error}</Text>
 
-      <Button
-        title="Register"
-        onPress={validateRegister}
-      />
+      <Button title="Register" onPress={validateRegister} />
 
       <Text
         style={styles.loginText}
-        onPress={() => navigation.navigate('LoginScreen')}>
+        onPress={() => navigation.navigate('LoginScreen')}
+      >
         Already have an account? Login
       </Text>
-
     </View>
   );
 };
