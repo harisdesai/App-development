@@ -10,7 +10,8 @@ import Experiment2_4 from './pages/Experiment2_4';
 import Experiment3_1 from './pages/Experiment3_1';
 import Experiment3_2 from './pages/Experiment3_2';
 import Experiment3_3 from './pages/Experiment3_3';
-
+import RegisterScreen from './pages/RegisterScreen';
+import LoginScreen from './pages/LoginScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -57,6 +58,16 @@ export default function App() {
         <Stack.Screen
           name="Experiment3_3"
           component={Experiment3_3}
+        />
+
+        <Stack.Screen
+          name="LoginScreen"
+          component={LoginScreen}
+        />
+
+        <Stack.Screen
+          name="RegisterScreen"
+          component={RegisterScreen}
         />
 
       </Stack.Navigator>

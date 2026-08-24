@@ -40,6 +40,16 @@ const Home = ({ navigation }: any) => {
         onPress={() => navigation.navigate('Experiment3_3')}
       />
 
+      <ExperimentCard
+        title="LoginScreen"
+        onPress={() => navigation.navigate('LoginScreen')}
+      />
+
+      <ExperimentCard
+        title="RegisterScreen"
+        onPress={() => navigation.navigate('RegisterScreen')}
+      />
+
     </ScrollView>
   );
 };
