@@ -14,17 +14,6 @@ const ProfileScreen = () => {
     Alert.alert('Success', 'Profile Updated');
   };
 
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-    },
-    profileTitle: {
-      fontSize: 24,
-      fontWeight: 'bold',
-      marginBottom: 20,
-    },
-  });
-
   return (
     <View style={styles.container}>
 
@@ -60,5 +49,17 @@ const ProfileScreen = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+
+  profileTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+});
 
 export default ProfileScreen;

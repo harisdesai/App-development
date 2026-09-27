@@ -13,7 +13,7 @@ import Experiment3_3 from './pages/Experiment3_3';
 import RegisterScreen from './pages/RegisterScreen';
 import LoginScreen from './pages/LoginScreen';
 import Experiment5 from './pages/Experiment5';
-import ProfileScreen from './pages/ProfileScreen';
+import MainTabs from './pages/MainTabs';
 
 
 const Stack = createNativeStackNavigator();
@@ -79,8 +79,8 @@ export default function App() {
         />
 
         <Stack.Screen
-          name="ProfileScreen"
-          component={ProfileScreen}
+          name="MainTabs"
+          component={MainTabs}
         />
 
       </Stack.Navigator>

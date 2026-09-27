@@ -56,8 +56,8 @@ const Home = ({ navigation }: any) => {
       />
 
       <ExperimentCard
-        title="ProfileScreen"
-        onPress={() => navigation.navigate('ProfileScreen')}
+        title="MainTabs"
+        onPress={() => navigation.navigate('MainTabs')}
       />
 
     </ScrollView>

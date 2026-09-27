@@ -1,18 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-const CustomHeader = ({
-  title,
-}: {
-  title: string;
-}) => {
+const CustomHeader = ({ title }: { title: string }) => {
   return (
     <View style={styles.header}>
-
-      <Text style={styles.title}>
-        {title}
-      </Text>
-
+      <Text style={styles.title}>{title}</Text>
     </View>
   );
 };

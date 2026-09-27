@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   loginText: {
+    color: 'blue',
     marginTop: 20,
     textAlign: 'center',
   },

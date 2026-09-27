@@ -19,8 +19,6 @@ const styles = StyleSheet.create({
     margin: 10,
     backgroundColor: 'white',
     borderRadius: 10,
-
-    // Shadow for Android
     elevation: 5,
   },
 });
