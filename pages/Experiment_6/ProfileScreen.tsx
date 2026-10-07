@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {View, Text, Alert, StyleSheet} from 'react-native';
 
-import CustomHeader from '../components/CustomHeader';
-import CustomCard from '../components/CustomCard';
-import CustomInput from '../components/CustomInput';
-import CustomButton from '../components/CustomButton';
+import CustomHeader from '../../components/CustomHeader';
+import CustomCard from '../../components/CustomCard';
+import CustomInput from '../../components/CustomInput';
+import CustomButton from '../../components/CustomButton';
 
 const ProfileScreen = () => {
   const [name, setName] = useState('Haris');

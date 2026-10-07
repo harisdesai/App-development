@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text, Alert, StyleSheet} from 'react-native';
 
-import CustomHeader from '../components/CustomHeader';
-import CustomCard from '../components/CustomCard';
-import CustomButton from '../components/CustomButton';
+import CustomHeader from '../../components/CustomHeader';
+import CustomCard from '../../components/CustomCard';
+import CustomButton from '../../components/CustomButton';
 
 const SettingsScreen = () => {
 

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {View, Alert,} from 'react-native';
 
-import CustomButton from '../components/CustomButton';
-import CustomInput from '../components/CustomInput';
-import CustomCard from '../components/CustomCard';
-import CustomHeader from '../components/CustomHeader';
+import CustomButton from '../../components/CustomButton';
+import CustomInput from '../../components/CustomInput';
+import CustomCard from '../../components/CustomCard';
+import CustomHeader from '../../components/CustomHeader';
 
 const Experiment5 = () => {
   const [email, setEmail] = useState('');
